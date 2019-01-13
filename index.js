@@ -11,12 +11,17 @@ function destructivelyPrependKitten(name){
 }
 
 function destructivelyRemoveLastKitten(){
-  kitten.pop();
+  kittens.pop();
   return kittens
 }
 
 function destructivelyRemoveFirstKitten(){
-  kitten.shift();
+  kittens.shift();
   return kittens
+}
+
+function appendKitten(name){
+  newKittens = [...kittens, name];
+  return newKittens
 }
 // Add your functions and code here
